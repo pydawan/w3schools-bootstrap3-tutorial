@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/bower/bootstrap/dist/css/bootstrap.min.css">
+    <style type="text/css"></style>
+    <title>Bootstrap Popover Plugin</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Bootstrap Popover Plugin</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>How To Create a Popover</h2>
+                <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">
+                    Toggle popover
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Positioning Popovers</h2>
+                <a href="#" title="Header" data-toggle="popover" data-placement="top" data-content="Content">Click</a>
+                <a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Click</a>
+                <a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Click</a>
+                <a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Click</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Closing Popovers</h2>
+                <a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus" data-content="Click anywhere in the document to close this popover">
+                    Click me
+                </a>
+                <a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="hover" data-content="Click anywhere in the document to close this popover">
+                    Click me
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="../static/bower/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</body>
+
+</html>
