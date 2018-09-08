@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/bower/bootstrap/dist/css/bootstrap.min.css">
+    <style type="text/css"></style>
+    <title>The Tooltip Plugin</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>The Tooltip Plugin</h1>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>How To Create a Tooltip</h2>
+                <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Positioning Tooltips</h2>
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Hover</a>
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Hover</a>
+                <a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Hover</a>
+                <a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Hover</a>
+                <a href="#" data-toggle="tooltip" data-placement="auto" title="Hooray!">Hover</a>
+                <a href="#" data-toggle="tooltip" data-placement="auto left" title="Hooray!">Hover</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../static/bower/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+</body>
+
+</html>
