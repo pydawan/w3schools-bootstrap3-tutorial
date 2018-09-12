@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/bower/bootstrap/dist/css/bootstrap.min.css">
+    <style type="text/css">
+        .col-xs-1,
+        .col-xs-2,
+        .col-xs-3,
+        .col-xs-4,
+        .col-xs-5,
+        .col-xs-6,
+        .col-xs-7,
+        .col-xs-8,
+        .col-xs-9,
+        .col-xs-10,
+        .col-xs-11,
+        .col-xs-12,
+        .col-sm-1,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12,
+        .col-md-1,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12,
+        .col-lg-1,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12 {
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+    </style>
+    <title>Bootstrap Grid Examples</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <h1>Bootstrap Grid - Large Devices</h1>
+
+        <!--
+            The following example shows how to get a three equal-width columns starting at tablets and scaling to large desktops.
+            On mobile phones, the columns will automatically stack:
+        -->
+        <h2>Three Equal Columns</h2>
+        <div class="row">
+            <div class="col-sm-4">.col-sm-4</div>
+            <div class="col-sm-4">.col-sm-4</div>
+            <div class="col-sm-4">.col-sm-4</div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!--
+            The following example shows how to get a three various-width columns starting at tablets and scaling to large desktops:
+        -->
+        <h2>Three Unequal Columns</h2>
+        <div class="row">
+            <div class="col-sm-3">.col-sm-3</div>
+            <div class="col-sm-6">.col-sm-6</div>
+            <div class="col-sm-3">.col-sm-3</div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!--
+            The following example shows how to get two various-width columns starting at tablets and scaling to large desktops:
+        -->
+        <h2>Two Unequal Columns</h2>
+        <div class="row">
+            <div class="col-sm-4">.col-sm-4</div>
+            <div class="col-sm-8">.col-sm-8</div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!--
+            The following example shows how to get two columns starting at tablets and scaling to large desktops, with another two
+            columns (equal widths) within the larger column (at mobile phones, these columns and their nested columns will stack):
+        -->
+        <h2>Two Columns With Two Nested Columns</h2>
+        <div class="row">
+            <div class="col-sm-8">
+                .col-sm-8
+                <div class="row">
+                    <div class="col-sm-6">.col-sm-6</div>
+                    <div class="col-sm-6">.col-sm-6</div>
+                </div>
+            </div>
+            <div class="col-sm-4">.col-sm-4</div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <h2>Mixed: Mobile And Desktop</h2>
+        <!--
+            The Bootstrap grid system has four classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). The
+            classes can be combined to create more dynamic and flexible layouts.
+
+            Tip: Each class scales up, so if you wish to set the same widths for xs and sm, you only need to specify xs.
+        -->
+        <div class="row">
+            <div class="col-xs-9 col-md-7">.col-xs-9 .col-md-7</div>
+            <div class="col-xs-3 col-md-5">.col-xs-3 .col-md-5</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6 col-md-10">.col-xs-6 .col-md-10</div>
+            <div class="col-xs-6 col-md-2">.col-xs-6 .col-md-2</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6">.col-xs-6</div>
+            <div class="col-xs-6">.col-xs-6</div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!--
+            Tip: Remember that grid columns should add up to twelve for a row. More than that, columns will stack no matter the viewport.
+        -->
+        <h2>Mixed: Mobile, Tablet And Desktop</h2>
+        <div class="row">
+            <div class="col-xs-7 col-sm-6 col-lg-8">.col-xs-7 .col-sm-6 .col-lg-8</div>
+            <div class="col-xs-5 col-sm-6 col-lg-4">.col-xs-5 .col-sm-6 .col-lg-4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-8 col-lg-10">.col-xs-6 .col-sm-8 .col-lg-10</div>
+            <div class="col-xs-6 col-sm-4 col-lg-2">.col-xs-6 .col-sm-4 .col-lg-2</div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!--
+            Clear floats (with the .clearfix class) at specific breakpoints to prevent strange wrapping with uneven content:
+        -->
+        <h2>Clear Floats</h2>
+        <div class="row">
+            <div class="col-xs-6 col-sm-3">
+                Column 1
+                <br>
+                Resize the browser window to see the effect. Also try to remove the div clearfix line and see what
+                happens.
+            </div>
+            <div class="col-xs-6 col-sm-3">Column 2</div>
+            <!-- Add clearfix for only the required viewport -->
+            <div class="clearfix visible-xs"></div>
+            <div class="col-xs-6 col-sm-3">Column 3</div>
+            <div class="col-xs-6 col-sm-3">Column 4</div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!--
+            Move columns to the right using .col-md-offset-* classes. These classes increase the left margin of a column by * columns:
+        -->
+        <h2>Offsetting Columns</h2>
+        <div class="row">
+            <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+            <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">
+                .col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!--
+            Change the order of the grid columns with .col-md-push-* and .col-md-pull-* classes:
+        -->
+        <h2>Push And Pull - Change Column Ordering</h2>
+        <div class="row">
+            <div class="col-sm-4 col-sm-push-8">.col-sm-4 .col-sm-push-8</div>
+            <div class="col-sm-8 col-sm-pull-4">.col-sm-8 .col-sm-pull-4</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
